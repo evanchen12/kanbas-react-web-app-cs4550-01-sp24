@@ -1,1 +1,80 @@
-<h1>Editor</h1>
+<html>
+  <head></head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li><a href="/Kanbas/Account/Navigation/index.html"> Account</a></li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Calendar/index.html">Calendar</a>
+              </li>
+              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+              </li>
+            </ul>
+          </td>
+          <td valign="top">
+            <form action="/Kanbas/Courses/Assignments/screen.html">
+              <label>Assignment Name</label><br/>
+              <input type="text" name="wd-assignment-name" value="Assignment 1" /><br/>
+              <label>Assignment Description</label><br/><br/>
+              <textarea name="wd-assignment-description" cols="30" rows="10">
+              Description
+              </textarea> 
+              <br/>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><label>Points</label></td>
+                    <td><label><input type="number" min="0" max="100" value="100"></label></td>
+                  </tr>
+                  <tr>
+                    <td><label>Assignment group</label></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><label>Submission Type</label></td>
+                    <td>
+                      <input type="checkbox" name="wd-submission-type1" value="ONLINE" checked>Online<br/>
+                      <input type="checkbox" name="wd-submission-type1" value="TEXT" checked>Text<br/>
+                      <input type="checkbox" name="wd-submission-type2" value="WEB">Website URL<br/>
+                      <input type="checkbox" name="wd-submission-type2" value="MEDIA" checked>Media Recording<br/>
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td><label>Assign</label></td>
+                    <td><input type="date" ></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button>Cancel</button>
+                      <button>Save</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
